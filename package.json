@@ -1,0 +1,17 @@
+{
+  "name": "projeto-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tsc --watch",
+    "start": "lite-server"
+  },
+  "author": "sidiney",
+  "license": "ISC",
+  "dependencies": {
+    "js-to-ts-converter": "^0.18.2",
+    "lite-server": "^2.6.1"
+  }
+}

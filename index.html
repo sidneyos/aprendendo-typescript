@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ts.ico" type="image/x-icon">
+    <title>Filmes</title>
+    <style>
+        body {
+            background-color: azure;
+        }
+
+        input {
+            font-size: 20px;
+            width: 400px;
+
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 40px;
+
+        }
+
+        .div1 {
+            margin-left: 460px;
+            margin-top: 100px;
+
+        }
+
+        #login-button {
+            margin: 10px 140px;
+            padding: 5px 30px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 10px;
+            background-color: darkcyan;
+        }
+
+        #search-button {
+            margin: 10px 120px;
+            padding: 5px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            background-color: darkcyan;
+            border-radius: 10px;
+        }
+    </style>
+    <script src="dist/resposta4.js" defer></script>
+</head>
+
+<body>
+    <h1><i><strong>Entre com sua conta e pesquise algum filme!</strong></i></h1>
+    <div class="div1">
+        <input id="login" placeholder="Email" onchange="preencherLogin(event)"><br><br>
+        <input id="senha" placeholder="Senha" type="password" onchange="preencherSenha(event)"><br><br>
+        <input id="api-key" placeholder="Api Key" onchange="preencherApi()"><br>
+        <button id="login-button" disabled><strong>Login</strong></button>
+
+        <div id="search-container">
+            <input id="search" placeholder="Digite o filme aqui..."><br>
+            <button id="search-button"><strong>Pesquisar Filme</strong></button>
+        </div>
+    </div>
+</body>
+
+</html>
